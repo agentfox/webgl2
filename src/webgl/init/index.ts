@@ -24,7 +24,7 @@ const initializer = (id: string) => {
 		"mytriangle"
 	);
 	modelRenderer.addInstance("instance1", "mytriangle");
-	GLC.clear(1.0, 1.0, 1.0, 1.0);
+	GLC.clear(1.0, 0.0, 1.0, 1.0);
 	modelRenderer.render();
 
 	// const render = () => {

@@ -23,8 +23,9 @@ class GLCommander {
 
 	//// float buffers are used to store vertices
 	// bind proper type of arraybuffer to the buffer object
-	bindArrayBuffer = (buffer: WebGLBuffer) =>
-		this.gl.bindBuffer(this.gl.ARRAY_BUFFER, buffer);
+	bindArrayBuffer = (buffer: WebGLBuffer) => {
+		return this.gl.bindBuffer(this.gl.ARRAY_BUFFER, buffer);
+	};
 	// add binded arraybuffer to the the vertex buffer object
 	addArrayBufferData = (vertices: Array<number>) => {
 		this.gl.bufferData(
